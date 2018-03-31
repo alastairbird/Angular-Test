@@ -1,4 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+	--white-smoke: #f5f5f5;
+	--gutter: 4rem;
+}
+
 body {
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	background: var(--white-smoke);
+}
+
+.module {
+	max-width: 70%;
+	padding: var(--gutter);
+	margin: var(--gutter) auto;
+	background: #fff;
 }
