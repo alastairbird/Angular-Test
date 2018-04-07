@@ -2,16 +2,22 @@
 
 <div class="module">
   <h1>1.</h1>
-  <input type="text" [(ngModel)]="name">
+  <input type="text" placeholder="Enter some text here" [(ngModel)]="name">
   <span>
     {{ name }}
   </span>
 </div>
 
-
 <div class="module">
   <h1>2.</h1>
   <app-servers></app-servers>
+</div>
+
+
+<div class="module">
+  <h1>3.</h1>
+  <app-success></app-success>
+  <app-warning></app-warning>
 </div>
 
 
