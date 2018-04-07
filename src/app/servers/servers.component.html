@@ -1,0 +1,15 @@
+Prevent wrapping host component, using attribute selector:<br>
+<strong>Server component:</strong>
+<p>
+  selector: '[app-server]',<br>
+  ....
+</p>
+<strong>servers.component.html:</strong>
+<p>
+	'div app-server'<br>or
+	'div class="app-server"'
+</p>
+
+<div app-server class="server"></div>
+<div app-server class="server"></div>
+<div app-server class="server"></div>
