@@ -11,5 +11,24 @@ Prevent wrapping host component, using attribute selector:<br>
 </p>
 
 <div app-server class="server"></div>
-<div app-server class="server"></div>
-<div app-server class="server"></div>
+
+<h2>Server production: </h2>
+<!-- 
+<input 
+	type="text"
+	class="form-control"
+	(input)="onUpdateServerName($event)"> -->
+
+<input 
+	type="text"
+	class="form-control"
+	[(ngModel)]="serverName">
+
+<button 
+	class="btn btn-primary" 
+	[disabled]="!allowNewServer" 
+	(click)="onCreateServer()"
+	>Add server</button>
+
+<p>{{serverCreationStatus}}</p>
+<p [innerText]="allowNewServer"></p>
