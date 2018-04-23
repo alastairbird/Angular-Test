@@ -1,0 +1,12 @@
+<button class="btn" (click)="toggleDisplay()">Toggle secret</button>
+
+<p *ngIf="displayIsVisible"><br>Secret text</p>
+
+<hr>
+
+<button class="btn btn-primary" (click)="handleTimeStamp($event)">Log the time</button>
+<ul>
+	<li *ngFor="let timestamp of timestamps" [class.blue]="moreThanFiveTimeStamps()">
+		{{timestamp}}
+	</li>
+</ul>
