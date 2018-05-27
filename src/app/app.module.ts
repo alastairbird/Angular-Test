@@ -9,6 +9,8 @@ import { ServersComponent } from './servers/servers.component';
 import { WarningComponent } from './warning/warning.component';
 import { SuccessComponent } from './success/success.component';
 import { ThirdPracticalComponent } from './third-practical/third-practical.component';
+import { FourthComponent } from './fourth/fourth.component';
+import { RecipeComponent } from './recipe/recipe.component';
 
 
 @NgModule({
@@ -18,7 +20,9 @@ import { ThirdPracticalComponent } from './third-practical/third-practical.compo
     ServersComponent,
     WarningComponent,
     SuccessComponent,
-    ThirdPracticalComponent
+    ThirdPracticalComponent,
+    FourthComponent,
+    RecipeComponent
   ],
   imports: [
     BrowserModule,

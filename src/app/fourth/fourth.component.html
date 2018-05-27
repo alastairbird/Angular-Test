@@ -1,0 +1,5 @@
+<div *ngFor="let recipe of recipes">
+	<h2>{{ recipe.name }}</h2>
+	<p>{{ recipe.description }}</p>
+	<img [src]="recipe.imagePath" alt="recipe.name" style="max-height: 200px"/>
+</div>
